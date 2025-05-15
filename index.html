@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium baby diapers and products for your little ones">
+    <title>Chinbi Kids</title>
+    <link rel="icon" href="./Images/Logo.png" class="w-100" type="image/png" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'baby-pink': '#FFC0CB',
+                        'baby-pink-light': '#FFE4E8',
+                        'baby-pink-dark': '#FF9DAD',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+
+<body class="bg-baby-pink-light overflow-x-hidden">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="flex items-center">
+                        <img src="./Images/Logo.png" alt="Logo" class="w-20 h-20 object-contain" />
+                        <div class="flex  leading-tight">
+                            <p class="text-3xl font-extrabold text-blue-600 tracking-wide">Chinbi</p>
+                            <span class="text-3xl font-extrabold text-pink-500 tracking-wider ">Kids</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="hidden md:flex flex-1 max-w-xl mx-8">
+                    <div class="relative w-full">
+                        <input type="text" placeholder="Tìm kiếm sản phẩm..."
+                            class="w-full px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-baby-pink-dark">
+                        <button class="absolute right-0 top-0 h-full px-4 text-baby-pink-dark">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-baby-pink-dark transition">Trang chủ</a>
+                    <a href="#products" class="text-gray-700 hover:text-baby-pink-dark transition">Sản phẩm</a>
+                    <a href="#about" class="text-gray-700 hover:text-baby-pink-dark transition">Về chúng tôi</a>
+                    <a href="#blog" class="text-gray-700 hover:text-baby-pink-dark transition">Blog</a>
+                    <a href="#contact" class="text-gray-700 hover:text-baby-pink-dark transition">Liên hệ</a>
+                </nav>
+
+                <div class="flex items-center space-x-4">
+                    <button class="md:hidden text-gray-700" id="mobile-menu-button">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-4 py-4">
+                    <div class="px-4 pb-4">
+                        <input type="text" placeholder="Tìm kiếm sản phẩm..."
+                            class="w-full px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-baby-pink-dark">
+                    </div>
+                    <a href="#home" class="text-gray-700 hover:text-baby-pink-dark transition px-4">Trang chủ</a>
+                    <a href="#products" class="text-gray-700 hover:text-baby-pink-dark transition px-4">Sản phẩm</a>
+                    <a href="#about" class="text-gray-700 hover:text-baby-pink-dark transition px-4">Về chúng tôi</a>
+                    <a href="#blog" class="text-gray-700 hover:text-baby-pink-dark transition px-4">Blog</a>
+                    <a href="#contact" class="text-gray-700 hover:text-baby-pink-dark transition px-4">Liên hệ</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section id="home" class="relative bg-gradient-to-r from-baby-pink-light to-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Chăm sóc bé yêu với <span
+                            class="text-baby-pink-dark">sản phẩm tốt nhất</span></h1>
+                    <p class="text-gray-600 mb-8 text-lg">Bỉm sữa chất lượng cao, an toàn và thoải mái cho làn da nhạy
+                        cảm của bé</p>
+                    <div class="flex space-x-4">
+                        <a href="#products"
+                            class="bg-baby-pink-dark hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-full transition">Mua
+                            ngay</a>
+                        <a href="#about"
+                            class="border-2 border-baby-pink-dark text-baby-pink-dark hover:bg-baby-pink-dark hover:text-white font-bold py-3 px-6 rounded-full transition">Tìm
+                            hiểu thêm</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <img src="./Images/anh-1.jpg " alt="Baby with diaper" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+
+        <!-- Decorative elements -->
+        <div class="absolute top-10 right-10 opacity-20">
+            <i class="fas fa-baby text-6xl text-baby-pink-dark"></i>
+        </div>
+        <div class="absolute bottom-10 left-10 opacity-20">
+            <i class="fas fa-heart text-6xl text-baby-pink-dark"></i>
+        </div>
+    </section>
+
+    <!-- Shipping Policy Banner -->
+    <section class="py-8 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="flex items-center space-x-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-baby-pink-dark text-3xl">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Giao hàng miễn phí</h3>
+                        <p class="text-sm text-gray-600">Cho đơn hàng từ 500.000đ</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-baby-pink-dark text-3xl">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Đổi trả dễ dàng</h3>
+                        <p class="text-sm text-gray-600">30 ngày đổi trả miễn phí</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-baby-pink-dark text-3xl">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Sản phẩm chính hãng</h3>
+                        <p class="text-sm text-gray-600">100% sản phẩm an toàn</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-baby-pink-dark text-3xl">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Hỗ trợ 24/7</h3>
+                        <p class="text-sm text-gray-600">Tư vấn trực tuyến</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-16 bg-baby-pink-light">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg text-center shadow-md" data-aos="fade-up">
+                    <div
+                        class="bg-baby-pink-light w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
+                        <i class="fas fa-leaf text-2xl text-baby-pink-dark"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Vật liệu tự nhiên</h3>
+                    <p class="text-gray-600">Sản phẩm được làm từ vật liệu tự nhiên, an toàn cho làn da nhạy cảm của bé
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg text-center shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="bg-baby-pink-light w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
+                        <i class="fas fa-tint text-2xl text-baby-pink-dark"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Siêu thấm hút</h3>
+                    <p class="text-gray-600">Công nghệ thấm hút nhanh, giữ khô thoáng suốt nhiều giờ</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg text-center shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="bg-baby-pink-light w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
+                        <i class="fas fa-shield-alt text-2xl text-baby-pink-dark"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Bảo vệ toàn diện</h3>
+                    <p class="text-gray-600">Thiết kế ôm khít, chống tràn hiệu quả, bảo vệ bé suốt ngày dài</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section id="products" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">Danh mục sản phẩm</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    Chúng tôi cung cấp đa dạng sản phẩm chăm sóc bé yêu với chất lượng tốt nhất
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Item -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition"
+                    data-aos="fade-up">
+                    <div class="bg-baby-pink-light h-56 flex items-center justify-center p-4">
+                        <img src="./Images/28.jpg" alt="Nước giặt" class="h-full w-full object-contain" />
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="font-bold text-lg mb-1">Nước giặt Baby</h3>
+                        <p class="text-gray-600 text-sm">Hương hoa cỏ</p>
+                    </div>
+                </div>
+
+                <!-- Lặp lại với các item khác -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="bg-baby-pink-light h-56 flex items-center justify-center p-4">
+                        <img src="./Images/35.jpg" alt="Khăn vải khô đa năng" class="h-full w-full object-contain" />
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="font-bold text-lg mb-1">Khăn vải khô đa năng</h3>
+                        <p class="text-gray-600 text-sm">Cho bé sơ sinh</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="bg-baby-pink-light h-56 flex items-center justify-center p-4">
+                        <img src="./Images/54.jpg" alt="Nước rửa bình sửa và rau quả"
+                            class="h-full w-full object-contain" />
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="font-bold text-lg mb-1">Nước rửa bình sửa và rau quả</h3>
+                        <p class="text-gray-600 text-sm">Làm sạch nhẹ nhàng</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="bg-baby-pink-light h-56 flex items-center justify-center p-4">
+                        <img src="./Images/63.jpg" alt="Khăn khô Bamboo" class="h-full w-full object-contain" />
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="font-bold text-lg mb-1">Khăn khô Bamboo</h3>
+                        <p class="text-gray-600 text-sm">Dầu gội, sữa tắm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- New Arrivals -->
+    <section class="py-16 bg-baby-pink-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">Sản phẩm mới</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Khám phá những sản
+                    phẩm mới nhất của chúng tôi</p>
+            </div>
+
+            <div class="swiper-container" id="new-arrivals-swiper">
+                <div class="swiper-wrapper pb-12">
+                    <!-- Product 1 -->
+                    <div class="swiper-slide" data-aos="fade-up">
+                        <div
+                            class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition border border-gray-200">
+                            <div class="relative">
+                                <img src="./Images/bim_gogomi.webp" alt="Bỉm dán cao cấp"
+                                    class="w-full h-64 object-contain bg-baby-pink-light">
+                                <div
+                                    class="absolute top-2 right-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">
+                                    NEW</div>
+                            </div>
+                            <div class="p-4">
+                                <div class="flex text-yellow-400 mb-2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="text-gray-500 text-sm ml-2">(8)</span>
+                                </div>
+                                <h3 class="font-bold text-lg mb-1">Bỉm Pháp Gogomi</h3>
+                                <p class="text-gray-600 text-sm mb-2">Thấm Hút Đột Phá – Chống Tràn Suốt 12h</p>
+                                <div class="flex justify-between items-center mt-4">
+                                    <div>
+                                        <span class="text-baby-pink-dark font-bold text-xl">390.000đ</span>
+                                    </div>
+                                    <button
+                                        class="bg-baby-pink-dark hover:bg-pink-600 text-white rounded-full w-10 h-10 flex items-center justify-center transition">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="100">
+                        <div
+                            class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition border border-gray-200">
+                            <div class="relative">
+                                <img src="./Images/bim-dem.webp" alt="Bỉm quần siêu mỏng"
+                                    class="w-full h-64 object-contain bg-baby-pink-light">
+                                <div
+                                    class="absolute top-2 right-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">
+                                    NEW</div>
+                            </div>
+                            <div class="p-4">
+                                <div class="flex text-yellow-400 mb-2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="text-gray-500 text-sm ml-2">(5)</span>
+                                </div>
+                                <h3 class="font-bold text-lg mb-1">Bỉm đêm Gooby Premium</h3>
+                                <p class="text-gray-600 text-sm mb-2">Cho bé 6-11kg, 74 miếng</p>
+                                <div class="flex justify-between items-center mt-4">
+                                    <div>
+                                        <span class="text-baby-pink-dark font-bold text-xl">380.000đ</span>
+                                    </div>
+                                    <button
+                                        class="bg-baby-pink-dark hover:bg-pink-600 text-white rounded-full w-10 h-10 flex items-center justify-center transition">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="200">
+                        <div
+                            class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition border border-gray-200">
+                            <div class="relative">
+                                <img src="./Images/36.jpg" alt="Khăn ướt không mùi"
+                                    class="w-full h-64 object-contain bg-baby-pink-light">
+                                <div
+                                    class="absolute top-2 right-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">
+                                    NEW</div>
+                            </div>
+                            <div class="p-4">
+                                <div class="flex text-yellow-400 mb-2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="text-gray-500 text-sm ml-2">(12)</span>
+                                </div>
+                                <h3 class="font-bold text-lg mb-1">Khăn vải khô đa năng</h3>
+                                <p class="text-gray-600 text-sm mb-2">100 tờ, không cồn</p>
+                                <div class="flex justify-between items-center mt-4">
+                                    <div>
+                                        <span class="text-baby-pink-dark font-bold text-xl">85.000đ</span>
+                                    </div>
+                                    <button
+                                        class="bg-baby-pink-dark hover:bg-pink-600 text-white rounded-full w-10 h-10 flex items-center justify-center transition">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="300">
+                        <div
+                            class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition border border-gray-200">
+                            <div class="relative">
+                                <img src="./Images/sua.webp" alt="Sữa Kendamil Classic Anh"
+                                    class="w-full h-64 object-contain bg-baby-pink-light">
+                                <div
+                                    class="absolute top-2 right-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">
+                                    NEW</div>
+                            </div>
+                            <div class="p-4">
+                                <div class="flex text-yellow-400 mb-2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="text-gray-500 text-sm ml-2">(3)</span>
+                                </div>
+                                <h3 class="font-bold text-lg mb-1">Sữa Kendamil Classic Anh</h3>
+                                <p class="text-gray-600 text-sm mb-2">Không dầu cá - Kendamil sử dụng Omega-3</p>
+                                <div class="flex justify-between items-center mt-4">
+                                    <div>
+                                        <span class="text-baby-pink-dark font-bold text-xl">600.000đ</span>
+                                    </div>
+                                    <button
+                                        class="bg-baby-pink-dark hover:bg-pink-600 text-white rounded-full w-10 h-10 flex items-center justify-center transition">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-next text-baby-pink-dark"></div>
+                <div class="swiper-button-prev text-baby-pink-dark"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Selling Products -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">Sản phẩm bán chạy</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Những sản phẩm được
+                    các mẹ tin dùng và đánh giá cao</p>
+            </div>
+
+            <div class="swiper-container" id="best-selling-swiper">
+                <div class="swiper-wrapper pb-12">
+                    <!-- Product 1 -->
+                    <div class="swiper-slide" data-aos="fade-up">
+                        <div
+                            class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition border border-gray-200">
+                            <div class="relative">
+                                <img src="./Images/thach.webp" alt="Bỉm dán siêu mềm"
+                                    class="w-full h-64 object-contain bg-baby-pink-light">
+                                <div
+                                    class="absolute top-2 right-2 bg-baby-pink-dark text-white text-xs font-bold px-2 py-1 rounded">
+                                    -15%</div>
+                            </div>
+                            <div class="p-4">
+                                <div class="flex text-yellow-400 mb-2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="text-gray-500 text-sm ml-2">(120)</span>
+                                </div>
+                                <h3 class="font-bold text-lg mb-1">Nước thạch quýt lê hoa chuông</h3>
+                                <p class="text-gray-600 text-sm mb-2">Vị ngọt dịu dễ uống/p>
+                                <div class="flex justify-between items-center mt-4">
+                                    <div>
+                                        <span class="text-baby-pink-dark font-bold text-xl">48.000đ</span>
+                                        <span class="text-gray-500 line-through text-sm ml-2">32.000đ</span>
+                                    </div>
+                                    <button
+                                        class="bg-baby-pink-dark hover:bg-pink-600 text-white rounded-full w-10 h-10 flex items-center justify-center transition">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="100">
+                        <div
+                            class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition border border-gray-200">
+                            <div class="relative">
+                                <img src="./Images/55.jpg" alt="Bỉm quần siêu thấm"
+                                    class="w-full h-64 object-contain bg-baby-pink-light">
+                                <div
+                                    class="absolute top-2 right-2 bg-baby-pink-dark text-white text-xs font-bold px-2 py-1 rounded">
+                                    -10%</div>
+                            </div>
+                            <div class="p-4">
+                                <div class="flex text-yellow-400 mb-2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="text-gray-500 text-sm ml-2">(98)</span>
+                                </div>
+                                <h3 class="font-bold text-lg mb-1">Nước giặt Baby</h3>
+                                <p class="text-gray-600 text-sm mb-2">An toàn cho bé- Thơm và sạch</p>
+                                <div class="flex justify-between items-center mt-4">
+                                    <div>
+                                        <span class="text-baby-pink-dark font-bold text-xl">150.000đ</span>
+                                        <span class="text-gray-500 line-through text-sm ml-2">190.000đ</span>
+                                    </div>
+                                    <button
+                                        class="bg-baby-pink-dark hover:bg-pink-600 text-white rounded-full w-10 h-10 flex items-center justify-center transition">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="200">
+                        <div
+                            class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition border border-gray-200">
+                            <div class="relative">
+                                <img src="./Images/bim-dem.webp" alt="Bỉm dán siêu mỏng"
+                                    class="w-full h-64 object-contain bg-baby-pink-light">
+                                <div
+                                    class="absolute top-2 right-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">
+                                    Mới</div>
+                            </div>
+                            <div class="p-4">
+                                <div class="flex text-yellow-400 mb-2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="text-gray-500 text-sm ml-2">(45)</span>
+                                </div>
+                                <h3 class="font-bold text-lg mb-1">Bỉm đêm Gooby Premium</h3>
+                                <p class="text-gray-600 text-sm mb-2">Cho bé 6-11kg, 74 miếng</p>
+                                <div class="flex justify-between items-center mt-4">
+                                    <div>
+                                        <span class="text-baby-pink-dark font-bold text-xl">380.000đ</span>
+                                    </div>
+                                    <button
+                                        class="bg-baby-pink-dark hover:bg-pink-600 text-white rounded-full w-10 h-10 flex items-center justify-center transition">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="300">
+                        <div
+                            class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition border border-gray-200">
+                            <div class="relative">
+                                <img src="./Images//62.jpg" alt="Khăn ướt cao cấp"
+                                    class="w-full h-64 object-contain bg-baby-pink-light">
+                                <div
+                                    class="absolute top-2 right-2 bg-baby-pink-dark text-white text-xs font-bold px-2 py-1 rounded">
+                                    -20%</div>
+                            </div>
+                            <div class="p-4">
+                                <div class="flex text-yellow-400 mb-2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="text-gray-500 text-sm ml-2">(76)</span>
+                                </div>
+                                <h3 class="font-bold text-lg mb-1">Khăn vải khô đa năng</h3>
+                                <p class="text-gray-600 text-sm mb-2">Không mùi, 80 tờ</p>
+                                <div class="flex justify-between items-center mt-4">
+                                    <div>
+                                        <span class="text-baby-pink-dark font-bold text-xl">120.000đ</span>
+                                        <span class="text-gray-500 line-through text-sm ml-2">150.000đ</span>
+                                    </div>
+                                    <button
+                                        class="bg-baby-pink-dark hover:bg-pink-600 text-white rounded-full w-10 h-10 flex items-center justify-center transition">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-next text-baby-pink-dark"></div>
+                <div class="swiper-button-prev text-baby-pink-dark"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flash Sale -->
+    <section class="py-16 bg-gradient-to-r from-baby-pink-light to-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between mb-8">
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl font-bold mb-2">Flash Sale</h2>
+                    <p class="text-gray-600">Ưu đãi đặc biệt - Thời gian có hạn</p>
+                </div>
+
+                <div class="flex space-x-4 mt-4 md:mt-0" data-aos="fade-left">
+                    <div class="bg-white rounded-lg shadow-md p-3 w-16 text-center">
+                        <div class="text-2xl font-bold text-baby-pink-dark" id="days">00</div>
+                        <div class="text-xs text-gray-500">Ngày</div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-3 w-16 text-center">
+                        <div class="text-2xl font-bold text-baby-pink-dark" id="hours">00</div>
+                        <div class="text-xs text-gray-500">Giờ</div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-3 w-16 text-center">
+                        <div class="text-2xl font-bold text-baby-pink-dark" id="minutes">00</div>
+                        <div class="text-xs text-gray-500">Phút</div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-3 w-16 text-center">
+                        <div class="text-2xl font-bold text-baby-pink-dark" id="seconds">00</div>
+                        <div class="text-xs text-gray-500">Giây</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Flash Sale Product 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition border border-gray-200"
+                    data-aos="fade-up">
+                    <div class="relative">
+                        <img src="./Images//64.jpg" alt="Combo bỉm dán"
+                            class="w-full h-64 object-contain bg-baby-pink-light">
+                        <div class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
+                            -30%</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">Khăn vải khô đa năng</h3>
+                        <p class="text-gray-600 text-sm mb-2">An toàn cho làn da bé</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2 mb-4">
+                            <div class="bg-baby-pink-dark h-2 rounded-full" style="width: 75%"></div>
+                        </div>
+                        <div class="text-sm text-gray-600 mb-4">Đã bán: 15/20</div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-baby-pink-dark font-bold text-xl">100.000đ</span>
+                                <span class="text-gray-500 line-through text-sm ml-2">80.000đ</span>
+                            </div>
+                            <button
+                                class="bg-baby-pink-dark hover:bg-pink-600 text-white py-2 px-4 rounded-full transition">
+                                Mua ngay
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flash Sale Product 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition border border-gray-200"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative">
+                        <img src="./Images/bim_gogomi.webp" alt="Combo bỉm quần"
+                            class="w-full h-64 object-contain bg-baby-pink-light">
+                        <div class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
+                            -25%</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">Bỉm Pháp Gogomi</h3>
+                        <p class="text-gray-600 text-sm mb-2">Thấm Hút Đột Phá – Chống Tràn Suốt 12h</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2 mb-4">
+                            <div class="bg-baby-pink-dark h-2 rounded-full" style="width: 60%"></div>
+                        </div>
+                        <div class="text-sm text-gray-600 mb-4">Đã bán: 12/20</div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-baby-pink-dark font-bold text-xl">340.000đ</span>
+                                <span class="text-gray-500 line-through text-sm ml-2">390.000đ</span>
+                            </div>
+                            <button
+                                class="bg-baby-pink-dark hover:bg-pink-600 text-white py-2 px-4 rounded-full transition">
+                                Mua ngay
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flash Sale Product 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition border border-gray-200"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative">
+                        <img src="./Images/58.jpg" alt="Combo chăm sóc"
+                            class="w-full h-64 object-contain bg-baby-pink-light">
+                        <div class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
+                            -35%</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">Nước giặt Baby</h3>
+                        <p class="text-gray-600 text-sm mb-2">Hương dịu nhẹ - An toàn cho bé</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2 mb-4">
+                            <div class="bg-baby-pink-dark h-2 rounded-full" style="width: 40%"></div>
+                        </div>
+                        <div class="text-sm text-gray-600 mb-4">Đã bán: 8/20</div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-baby-pink-dark font-bold text-xl">140.000đ</span>
+                                <span class="text-gray-500 line-through text-sm ml-2">190.000đ</span>
+                            </div>
+                            <button
+                                class="bg-baby-pink-dark hover:bg-pink-600 text-white py-2 px-4 rounded-full transition">
+                                Mua ngay
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Comparison -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">So sánh sản phẩm</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Lựa chọn sản phẩm phù
+                    hợp nhất với nhu cầu của bé</p>
+            </div>
+
+            <div class="overflow-x-auto" data-aos="fade-up">
+                <table class="w-full min-w-[800px] bg-white rounded-lg shadow-md">
+                    <thead>
+                        <tr class="bg-baby-pink-light">
+                            <th class="p-4 text-left">Tính năng</th>
+                            <th class="p-4 text-center">Bỉm dán cơ bản</th>
+                            <th class="p-4 text-center">Bỉm dán cao cấp</th>
+                            <th class="p-4 text-center">Bỉm quần cơ bản</th>
+                            <th class="p-4 text-center">Bỉm quần cao cấp</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-200">
+                            <td class="p-4 font-medium">Thời gian sử dụng</td>
+                            <td class="p-4 text-center">8-10 giờ</td>
+                            <td class="p-4 text-center">12-14 giờ</td>
+                            <td class="p-4 text-center">8-10 giờ</td>
+                            <td class="p-4 text-center">12-14 giờ</td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="p-4 font-medium">Khả năng thấm hút</td>
+                            <td class="p-4 text-center">Tốt</td>
+                            <td class="p-4 text-center">Rất tốt</td>
+                            <td class="p-4 text-center">Tốt</td>
+                            <td class="p-4 text-center">Rất tốt</td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="p-4 font-medium">Độ mềm mại</td>
+                            <td class="p-4 text-center">Mềm</td>
+                            <td class="p-4 text-center">Siêu mềm</td>
+                            <td class="p-4 text-center">Mềm</td>
+                            <td class="p-4 text-center">Siêu mềm</td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="p-4 font-medium">Chống hăm</td>
+                            <td class="p-4 text-center"><i class="fas fa-check text-green-500"></i></td>
+                            <td class="p-4 text-center"><i class="fas fa-check text-green-500"></i></td>
+                            <td class="p-4 text-center"><i class="fas fa-check text-green-500"></i></td>
+                            <td class="p-4 text-center"><i class="fas fa-check text-green-500"></i></td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="p-4 font-medium">Vật liệu tự nhiên</td>
+                            <td class="p-4 text-center"><i class="fas fa-times text-red-500"></i></td>
+                            <td class="p-4 text-center"><i class="fas fa-check text-green-500"></i></td>
+                            <td class="p-4 text-center"><i class="fas fa-times text-red-500"></i></td>
+                            <td class="p-4 text-center"><i class="fas fa-check text-green-500"></i></td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="p-4 font-medium">Giá tham khảo</td>
+                            <td class="p-4 text-center">320.000đ</td>
+                            <td class="p-4 text-center">390.000đ</td>
+                            <td class="p-4 text-center">350.000đ</td>
+                            <td class="p-4 text-center">420.000đ</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4"></td>
+                            <td class="p-4 text-center">
+                                <button
+                                    class="bg-baby-pink-dark hover:bg-pink-600 text-white py-2 px-4 rounded-full transition text-sm">Mua
+                                    ngay</button>
+                            </td>
+                            <td class="p-4 text-center">
+                                <button
+                                    class="bg-baby-pink-dark hover:bg-pink-600 text-white py-2 px-4 rounded-full transition text-sm">Mua
+                                    ngay</button>
+                            </td>
+                            <td class="p-4 text-center">
+                                <button
+                                    class="bg-baby-pink-dark hover:bg-pink-600 text-white py-2 px-4 rounded-full transition text-sm">Mua
+                                    ngay</button>
+                            </td>
+                            <td class="p-4 text-center">
+                                <button
+                                    class="bg-baby-pink-dark hover:bg-pink-600 text-white py-2 px-4 rounded-full transition text-sm">Mua
+                                    ngay</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-baby-pink-light">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center py-12 px-4 md:px-16 bg-pink-50 rounded-2xl shadow-md">
+                <!-- Hình ảnh -->
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <img src="./Images/avatar-01.jpg" alt="Mẹ chăm sóc bé"
+                        class="rounded-xl shadow-xl w-full h-auto object-cover" />
+                </div>
+
+                <!-- Nội dung -->
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <h2 class="text-4xl font-extrabold text-baby-pink-dark mb-6 tracking-wide">Về chúng tôi</h2>
+                    <p class="text-gray-700 text-lg mb-8 leading-relaxed">
+                        <span class="font-semibold text-baby-pink-dark">BabyComfort</span> là thương hiệu chuyên cung
+                        cấp các sản phẩm chăm sóc trẻ em chất lượng cao, đặc biệt là bỉm sữa.
+                        Chúng tôi cam kết mang đến những sản phẩm an toàn, thân thiện với làn da nhạy cảm của bé.
+                    </p>
+
+                    <div class="space-y-6">
+                        <!-- Ưu điểm 1 -->
+                        <div class="flex items-start">
+                            <div class="bg-white p-3 rounded-full shadow mr-4">
+                                <i class="fas fa-check text-baby-pink-dark text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-800 mb-1">Chất lượng hàng đầu</h3>
+                                <p class="text-gray-600">Sản phẩm được kiểm định chất lượng nghiêm ngặt.</p>
+                            </div>
+                        </div>
+
+                        <!-- Ưu điểm 2 -->
+                        <div class="flex items-start">
+                            <div class="bg-white p-3 rounded-full shadow mr-4">
+                                <i class="fas fa-check text-baby-pink-dark text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-800 mb-1">Thân thiện với môi trường</h3>
+                                <p class="text-gray-600">Sử dụng vật liệu có thể phân hủy sinh học.</p>
+                            </div>
+                        </div>
+
+                        <!-- Ưu điểm 3 -->
+                        <div class="flex items-start">
+                            <div class="bg-white p-3 rounded-full shadow mr-4">
+                                <i class="fas fa-check text-baby-pink-dark text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-800 mb-1">Giá cả hợp lý</h3>
+                                <p class="text-gray-600">Cam kết mang đến sản phẩm chất lượng với giá tốt nhất.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">Bài viết hữu ích</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Những kiến thức và
+                    mẹo hữu ích trong việc chăm sóc bé yêu</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden" data-aos="fade-up">
+                    <img src="https://img.freepik.com/free-photo/mother-holding-her-baby-high-view_23-2148355255.jpg"
+                        alt="Chăm sóc bé sơ sinh" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-gray-500 text-sm mb-2">
+                            <i class="far fa-calendar-alt mr-2"></i>
+                            <span>15/05/2023</span>
+                            <span class="mx-2">|</span>
+                            <i class="far fa-user mr-2"></i>
+                            <span>Bs. Nguyễn Thị Hương</span>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">5 mẹo chăm sóc bé sơ sinh cho mẹ mới</h3>
+                        <p class="text-gray-600 mb-4">Những kinh nghiệm quý báu giúp các mẹ mới dễ dàng chăm sóc bé yêu
+                            trong những tháng đầu đời.</p>
+                        <a href="#" class="text-baby-pink-dark font-medium hover:underline">Đọc tiếp <i
+                                class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://img.freepik.com/free-photo/mother-changing-baby-s-diaper_23-2148798279.jpg"
+                        alt="Cách chọn bỉm" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-gray-500 text-sm mb-2">
+                            <i class="far fa-calendar-alt mr-2"></i>
+                            <span>10/05/2023</span>
+                            <span class="mx-2">|</span>
+                            <i class="far fa-user mr-2"></i>
+                            <span>Chuyên gia Trần Minh</span>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Cách chọn bỉm phù hợp với từng giai đoạn phát triển của bé
+                        </h3>
+                        <p class="text-gray-600 mb-4">Hướng dẫn chi tiết giúp bố mẹ lựa chọn loại bỉm phù hợp nhất với
+                            độ tuổi và cân nặng của bé.</p>
+                        <a href="#" class="text-baby-pink-dark font-medium hover:underline">Đọc tiếp <i
+                                class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://img.freepik.com/free-photo/baby-girl-playing-floor_23-2148865287.jpg"
+                        alt="Phòng ngừa hăm tã" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-gray-500 text-sm mb-2">
+                            <i class="far fa-calendar-alt mr-2"></i>
+                            <span>05/05/2023</span>
+                            <span class="mx-2">|</span>
+                            <i class="far fa-user mr-2"></i>
+                            <span>Bs. Lê Văn An</span>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">7 cách phòng ngừa và điều trị hăm tã hiệu quả</h3>
+                        <p class="text-gray-600 mb-4">Những biện pháp đơn giản nhưng hiệu quả giúp phòng ngừa và điều
+                            trị tình trạng hăm tã ở trẻ nhỏ.</p>
+                        <a href="#" class="text-baby-pink-dark font-medium hover:underline">Đọc tiếp <i
+                                class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="#"
+                    class="inline-block bg-baby-pink-dark hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-full transition">Xem
+                    tất cả bài viết</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-baby-pink-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">Câu hỏi thường gặp</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Giải đáp những thắc
+                    mắc phổ biến của khách hàng</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto" data-aos="fade-up">
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button
+                            class="faq-toggle w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition">
+                            <span class="font-bold">Làm thế nào để chọn size bỉm phù hợp cho bé?</span>
+                            <i class="fas fa-chevron-down text-baby-pink-dark transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden p-4 bg-white">
+                            <p class="text-gray-600">Để chọn size bỉm phù hợp, bạn nên dựa vào cân nặng của bé. Thông
+                                thường, các size bỉm được phân loại như sau:</p>
+                            <ul class="list-disc pl-5 mt-2 text-gray-600">
+                                <li>Size NB: Dưới 5kg</li>
+                                <li>Size S: 4-8kg</li>
+                                <li>Size M: 6-11kg</li>
+                                <li>Size L: 9-14kg</li>
+                                <li>Size XL: 12-17kg</li>
+                                <li>Size XXL: Trên 15kg</li>
+                            </ul>
+                            <p class="text-gray-600 mt-2">Ngoài ra, bạn cũng nên chú ý đến sự vừa vặn của bỉm. Nếu bỉm
+                                quá chật hoặc để lại vết hằn trên da bé, bạn nên chọn size lớn hơn.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button
+                            class="faq-toggle w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition">
+                            <span class="font-bold">Nên thay bỉm cho bé bao lâu một lần?</span>
+                            <i class="fas fa-chevron-down text-baby-pink-dark transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden p-4 bg-white">
+                            <p class="text-gray-600">Thông thường, bạn nên thay bỉm cho bé mỗi 2-3 giờ hoặc ngay khi bỉm
+                                bị ướt hoặc bẩn. Đối với bé sơ sinh, có thể cần thay bỉm thường xuyên hơn, khoảng 8-10
+                                lần mỗi ngày. Đối với bé lớn hơn, có thể thay ít hơn, khoảng 6-8 lần mỗi ngày.</p>
+                            <p class="text-gray-600 mt-2">Không nên để bé sử dụng một bỉm quá lâu, ngay cả khi bỉm chưa
+                                đầy, để tránh tình trạng hăm tã và các vấn đề về da khác.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button
+                            class="faq-toggle w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition">
+                            <span class="font-bold">Làm thế nào để phòng ngừa hăm tã cho bé?</span>
+                            <i class="fas fa-chevron-down text-baby-pink-dark transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden p-4 bg-white">
+                            <p class="text-gray-600">Để phòng ngừa hăm tã cho bé, bạn nên:</p>
+                            <ul class="list-disc pl-5 mt-2 text-gray-600">
+                                <li>Thay bỉm thường xuyên, không để bé sử dụng bỉm ướt hoặc bẩn quá lâu</li>
+                                <li>Làm sạch vùng da bị bỉm che phủ bằng nước ấm hoặc khăn ướt không cồn</li>
+                                <li>Để vùng da khô thoáng trước khi mặc bỉm mới</li>
+                                <li>Sử dụng kem chống hăm tã sau mỗi lần thay bỉm</li>
+                                <li>Chọn bỉm có kích thước phù hợp và chất lượng tốt</li>
+                                <li>Cho bé "tắm nắng" vùng mông (không có bỉm) trong thời gian ngắn mỗi ngày</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button
+                            class="faq-toggle w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition">
+                            <span class="font-bold">Nên sử dụng bỉm dán hay bỉm quần?</span>
+                            <i class="fas fa-chevron-down text-baby-pink-dark transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden p-4 bg-white">
+                            <p class="text-gray-600">Việc lựa chọn giữa bỉm dán và bỉm quần phụ thuộc vào độ tuổi và sự
+                                phát triển của bé:</p>
+                            <ul class="list-disc pl-5 mt-2 text-gray-600">
+                                <li><strong>Bỉm dán:</strong> Phù hợp với bé sơ sinh và bé nhỏ chưa biết lẫy, bò, đi.
+                                    Bỉm dán dễ thay và điều chỉnh độ vừa vặn.</li>
+                                <li><strong>Bỉm quần:</strong> Phù hợp với bé đã biết lẫy, bò, đi. Bỉm quần giúp bé dễ
+                                    dàng vận động mà không bị tuột hoặc xê dịch.</li>
+                            </ul>
+                            <p class="text-gray-600 mt-2">Nhiều cha mẹ thường chuyển từ bỉm dán sang bỉm quần khi bé
+                                khoảng 6-8 tháng tuổi, khi bé bắt đầu vận động nhiều hơn.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button
+                            class="faq-toggle w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition">
+                            <span class="font-bold">Chính sách đổi trả sản phẩm như thế nào?</span>
+                            <i class="fas fa-chevron-down text-baby-pink-dark transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden p-4 bg-white">
+                            <p class="text-gray-600">Chúng tôi áp dụng chính sách đổi trả trong vòng 30 ngày kể từ ngày
+                                mua hàng, với các điều kiện sau:</p>
+                            <ul class="list-disc pl-5 mt-2 text-gray-600">
+                                <li>Sản phẩm còn nguyên vẹn, không bị hư hỏng, còn nguyên tem mác</li>
+                                <li>Có hóa đơn mua hàng hoặc chứng từ xác nhận việc mua hàng</li>
+                                <li>Đối với bỉm và khăn ướt, chỉ đổi trả khi sản phẩm còn nguyên bao bì, chưa mở seal
+                                </li>
+                            </ul>
+                            <p class="text-gray-600 mt-2">Để biết thêm chi tiết, vui lòng liên hệ với bộ phận Chăm sóc
+                                Khách hàng của chúng tôi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">Khách hàng nói gì về chúng tôi</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Hàng ngàn mẹ bỉm sữa
+                    đã tin tưởng và hài lòng với sản phẩm của chúng tôi</p>
+            </div>
+
+            <div class="swiper-container" id="testimonial-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial 1 -->
+                    <div class="swiper-slide" data-aos="fade-up">
+                        <div class="bg-white p-8 rounded-lg shadow-md">
+                            <div class="flex text-yellow-400 mb-4">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-gray-600 mb-6">"Bỉm siêu thấm thực sự rất tốt, bé nhà mình dùng rất thích,
+                                không bị hăm tã và ngủ ngon suốt đêm. Mình đã dùng nhiều loại bỉm khác nhau nhưng chỉ có
+                                BabyComfort là ưng ý nhất."</p>
+                            <div class="flex items-center">
+                                <img src="./Images/chi-huong.jpg" alt="Chị Hương" class="w-12 h-12 rounded-full mr-4">
+                                <div>
+                                    <h4 class="font-bold">Chị Hương</h4>
+                                    <p class="text-gray-500 text-sm">Mẹ bé Na, 8 tháng tuổi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="100">
+                        <div class="bg-white p-8 rounded-lg shadow-md">
+                            <div class="flex text-yellow-400 mb-4">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-gray-600 mb-6">"Mình rất thích bỉm quần của BabyComfort, chất liệu mềm mại,
+                                thấm hút tốt và không gây kích ứng cho bé. Đặc biệt là giá cả rất hợp lý so với chất
+                                lượng. Sẽ tiếp tục ủng hộ shop."</p>
+                            <div class="flex items-center">
+                                <img src="./Images/chi-linh.webp" alt="Chị Linh" class="w-12 h-12 rounded-full mr-4">
+                                <div>
+                                    <h4 class="font-bold">Chị Linh</h4>
+                                    <p class="text-gray-500 text-sm">Mẹ bé Bin, 1.5 tuổi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-delay="200">
+                        <div class="bg-white p-8 rounded-lg shadow-md">
+                            <div class="flex text-yellow-400 mb-4">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="text-gray-600 mb-6">"Combo chăm sóc toàn diện rất tiện lợi và tiết kiệm. Các sản
+                                phẩm đều có mùi thơm nhẹ nhàng, dịu nhẹ với da bé. Đặc biệt là dịch vụ giao hàng nhanh
+                                và đóng gói cẩn thận."</p>
+                            <div class="flex items-center">
+                                <img src="./Images/chi-mai.jpg" alt="Chị Mai" class="w-12 h-12 rounded-full mr-4">
+                                <div>
+                                    <h4 class="font-bold">Chị Mai</h4>
+                                    <p class="text-gray-500 text-sm">Mẹ bé Sushi, 10 tháng tuổi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="bg-gradient-to-r from-baby-pink-light to-white p-8 md:p-12 rounded-2xl shadow-lg">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right">
+                        <h2 class="text-3xl font-bold mb-4">Đăng ký nhận thông tin</h2>
+                        <p class="text-gray-600">Nhận thông tin về sản phẩm mới, khuyến mãi đặc biệt và các mẹo chăm sóc
+                            bé hữu ích</p>
+                    </div>
+                    <div class="md:w-1/2" data-aos="fade-left">
+                        <form class="flex flex-col sm:flex-row gap-4">
+                            <input type="email" placeholder="Email của bạn"
+                                class="flex-grow px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-baby-pink-dark">
+                            <button type="submit"
+                                class="bg-baby-pink-dark hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-full transition">Đăng
+                                ký</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 bg-baby-pink-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">Liên hệ với chúng tôi</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Chúng tôi luôn sẵn
+                    sàng hỗ trợ và giải đáp mọi thắc mắc của bạn</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center" data-aos="fade-up">
+                    <div
+                        class="bg-baby-pink-light w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-2xl text-baby-pink-dark"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Địa chỉ</h3>
+                    <p class="text-gray-600">27/36/10/12 Bùi Tư Toàn, phường An Lạc, Bình Tân, TP Hồ Chí Minh</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="bg-baby-pink-light w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone-alt text-2xl text-baby-pink-dark"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Điện thoại</h3>
+                    <p class="text-gray-600">Hotline: 093 8813354</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="bg-baby-pink-light w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-2xl text-baby-pink-dark"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Email</h3>
+                    <p class="text-gray-600">info@chinbikids.com</p>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-white p-8 rounded-lg shadow-md" data-aos="fade-up">
+                <form>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-2">Họ và tên</label>
+                            <input type="text" id="name"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-baby-pink-dark">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-baby-pink-dark">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-700 mb-2">Số điện thoại</label>
+                            <input type="tel" id="phone"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-baby-pink-dark">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 mb-2">Chủ đề</label>
+                            <input type="text" id="subject"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-baby-pink-dark">
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 mb-2">Nội dung</label>
+                        <textarea id="message" rows="5"
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-baby-pink-dark"></textarea>
+                    </div>
+                    <button type="submit"
+                        class="bg-baby-pink-dark hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-full transition">Gửi
+                        tin nhắn</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center space-x-4">
+                        <a href="#" class="flex items-center">
+                            <img src="./Images/Logo.png" alt="Logo" class="w-20 h-20 object-contain" />
+                            <div class="flex leading-tight">
+                                <p class="text-3xl font-extrabold text-blue-600 tracking-wide">Chinbi</p>
+                                <span class="text-3xl font-extrabold text-pink-500 tracking-wider">Kids</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <p class="text-gray-600 mb-4">Chăm sóc bé yêu với sản phẩm chất lượng cao, an toàn và thân thiện với
+                        làn da nhạy cảm của bé.</p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="bg-baby-pink-light hover:bg-baby-pink-dark text-baby-pink-dark hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="bg-baby-pink-light hover:bg-baby-pink-dark text-baby-pink-dark hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="bg-baby-pink-light hover:bg-baby-pink-dark text-baby-pink-dark hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#"
+                            class="bg-baby-pink-light hover:bg-baby-pink-dark text-baby-pink-dark hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Danh mục sản phẩm</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-baby-pink-dark">Bỉm dán</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-baby-pink-dark">Bỉm quần</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-baby-pink-dark">Khăn ướt</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-baby-pink-dark">Sữa tắm, dầu gội</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-baby-pink-dark">Phấn rôm, kem chống hăm</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Thông tin</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-baby-pink-dark">Về chúng tôi</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-baby-pink-dark">Chính sách bảo mật</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-baby-pink-dark">Điều khoản sử dụng</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-baby-pink-dark">Chính sách đổi trả</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-baby-pink-dark">Phương thức thanh toán</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Liên hệ</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-baby-pink-dark mt-1 mr-2"></i>
+                            <span class="text-gray-600">27/36/10/12 Bùi Tư Toàn, phường An Lạc, Bình Tân, TP Hồ Chí
+                                Minh</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt text-baby-pink-dark mt-1 mr-2"></i>
+                            <span class="text-gray-600">093 8813354</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-baby-pink-dark mt-1 mr-2"></i>
+                            <span class="text-gray-600">info@chinbikids.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-baby-pink-dark mt-1 mr-2"></i>
+                            <span class="text-gray-600">8:00 - 20:00, Thứ 2 - Chủ nhật</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-200 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-600 mb-4 md:mb:0">
+                        &copy; 2025 ChinbiKids. Design By
+                        <a href="https://www.facebook.com/w.fourtech" target="_blank" rel="noopener noreferrer nofollow"
+                            class="text-gray-650 hover:text-primary-400 no-underline transition">
+                            W-FOUR TECH </a>.
+                    </p>
+                    <div class="flex space-x-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/1200px-Visa_Inc._logo.svg.png"
+                            alt="Visa" class="h-8">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1200px-Mastercard-logo.svg.png"
+                            alt="Mastercard" class="h-8">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/1200px-PayPal.svg.png"
+                            alt="PayPal" class="h-8">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top"
+        class="fixed bottom-6 right-6 bg-baby-pink-dark text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Chat Support Widget -->
+    <div class="fixed bottom-4 sm:bottom-6 left-4 sm:left-6 z-50">
+        <button id="chat-toggle"
+            class="bg-baby-pink-dark text-white w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center shadow-lg">
+            <i class="fas fa-comments text-xl sm:text-2xl"></i>
+        </button>
+        <div id="chat-widget" class="hidden bg-white rounded-lg shadow-xl w-72 sm:w-80 h-auto
+         sm:h-auto overflow-hidden">
+            <div class="bg-baby-pink-dark text-white p-3 sm:p-4 flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-headset mr-2"></i>
+                    <span class="font-bold text-sm sm:text-base">Hỗ trợ trực tuyến</span>
+                </div>
+                <button id="chat-close" class="text-white">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="p-3 sm:p-4 h-56 sm:h-72 overflow-y-auto custom-scrollbar" id="chat-messages">
+                <div class="flex mb-4">
+                    <div class="w-8 h-8 rounded-full bg-baby-pink-light flex items-center justify-center mr-2">
+                        <i class="fas fa-user text-baby-pink-dark"></i>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg p-2 sm:p-3 max-w-[80%]">
+                        <p class="text-gray-700 text-xs sm:text-sm">Xin chào! Tôi có thể giúp gì cho bạn?</p>
+                        <span class="text-xs text-gray-500">10:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 p-3 sm:p-4">
+                <div class="flex">
+                    <input type="text" placeholder="Nhập tin nhắn..."
+                        class="flex-grow px-3 sm:px-4 py-2 rounded-l-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-baby-pink-dark text-xs sm:text-sm">
+                    <button class="bg-baby-pink-dark text-white px-3 sm:px-4 py-2 rounded-r-full">
+                        <i class="fas fa-paper-plane text-xs sm:text-sm"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Newsletter -->
+    <div id="popup-newsletter"
+        class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg shadow-xl max-w-md w-full relative">
+            <button id="popup-close" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="p-6">
+                <div class="text-center mb-6">
+                    <span class="text-3xl">👶</span>
+                    <h3 class="text-2xl font-bold mb-2">Nhận ưu đãi đặc biệt</h3>
+                    <p class="text-gray-600">Đăng ký nhận thông tin để được giảm giá 10% cho đơn hàng đầu tiên</p>
+                </div>
+                <form>
+                    <div class="mb-4">
+                        <input type="text" placeholder="Họ và tên"
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-baby-pink-dark">
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" placeholder="Email"
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-baby-pink-dark">
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-baby-pink-dark hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-full transition">Đăng
+                        ký ngay</button>
+                </form>
+                <div class="text-center mt-4">
+                    <label class="flex items-center justify-center text-sm text-gray-600">
+                        <input type="checkbox" class="mr-2">
+                        Không hiển thị lại
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Best selling products swiper
+        const bestSellingSwiper = new Swiper('#best-selling-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 4,
+                },
+            },
+        });
+
+        // New arrivals swiper
+        const newArrivalsSwiper = new Swiper('#new-arrivals-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 4,
+                },
+            },
+        });
+
+        // Testimonial swiper
+        const testimonialSwiper = new Swiper('#testimonial-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+
+        // Countdown timer
+        function updateCountdown() {
+            const endDate = new Date();
+            endDate.setDate(endDate.getDate() + 3); // 3 days from now
+
+            const now = new Date();
+            const diff = endDate - now;
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById('days').innerText = days.toString().padStart(2, '0');
+            document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // FAQ toggles
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('i');
+
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Chat widget
+        const chatToggle = document.getElementById('chat-toggle');
+        const chatWidget = document.getElementById('chat-widget');
+        const chatClose = document.getElementById('chat-close');
+
+        chatToggle.addEventListener('click', () => {
+            chatWidget.classList.toggle('hidden');
+        });
+
+        chatClose.addEventListener('click', () => {
+            chatWidget.classList.add('hidden');
+        });
+
+        // Popup Newsletter
+        const popupNewsletter = document.getElementById('popup-newsletter');
+        const popupClose = document.getElementById('popup-close');
+
+        // Show popup after 5 seconds
+        setTimeout(() => {
+            if (!localStorage.getItem('popup-closed')) {
+                popupNewsletter.classList.remove('hidden');
+            }
+        }, 5000);
+
+        popupClose.addEventListener('click', () => {
+            popupNewsletter.classList.add('hidden');
+
+            const checkbox = popupNewsletter.querySelector('input[type="checkbox"]');
+            if (checkbox.checked) {
+                localStorage.setItem('popup-closed', 'true');
+            }
+        });
+    </script>
+</body>
+
+</html>
